@@ -42,7 +42,7 @@
 .para {
     display: flex;
     justify-content: flex-end;
-    margin-left: 930px;
+    margin-left: 1090px;
 }
 
 .icon2 {
@@ -54,7 +54,7 @@
 
 .main {
     height: 60px;
-    width: 95%;
+    width: 1090px;
     border-radius: 10px;
     background-color: rgb(9, 112, 197);
     display: flex;
@@ -62,7 +62,7 @@
     align-items: center;
     font-size: 24px;
     font-weight: bolder;
-    margin-left: 30px;
+    margin-left: 250px;
     margin-top: 70px;
 }
 
@@ -75,11 +75,11 @@
 }
 
 .box1 {
-    height: 160px;
-    width: 40%;
+    height: 200px;
+    width: 45%;
     background-color: rgb(9, 112, 197);
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: center;
     text-align: center;
     margin-left: 30px;
@@ -89,14 +89,15 @@
 }
 
 .box1 img {
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 140px;
+    margin-top: 10px;
 }
 
 
 .box2 {
-    height: 160px;
-    width: 40%;
+    height: 200px;
+    width: 45%;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
     margin-top: 20px;
@@ -109,14 +110,14 @@
 }
 
 .box2 img {
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 140px;
     margin-top: 10px;
 }
 
 .box3 {
-    height: 160px;
-    width: 40%;
+    height: 200px;
+    width: 45%;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
     margin-top: 20px;
@@ -129,13 +130,14 @@
 }
 
 .box3 img {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 160px;
+    margin-top: 5px;
 }
 
 .box4 {
-    height: 160px;
-    width: 40%;
+    height: 200px;
+    width: 45%;
     background-color: rgb(9, 112, 197);
     border-radius: 10px;
     margin-top: 20px;
@@ -148,6 +150,7 @@
 }
 
 .box4 img {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 170px;
+    margin-top: 2px;
 }
