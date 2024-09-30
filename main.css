@@ -54,7 +54,7 @@
 
 .main {
     height: 60px;
-    width: 1090px;
+    width: 1415px;
     border-radius: 10px;
     background-color: rgb(9, 112, 197);
     display: flex;
@@ -62,7 +62,7 @@
     align-items: center;
     font-size: 24px;
     font-weight: bolder;
-    margin-left: 250px;
+    margin-left: 75px;
     margin-top: 70px;
 }
 
