@@ -79,7 +79,7 @@
     width: 45%;
     background-color: rgb(9, 112, 197);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     align-items: center;
     text-align: center;
     margin-left: 30px;
@@ -92,6 +92,10 @@
     height: 130px;
     width: 140px;
     margin-top: 10px;
+}
+
+.box1:hover{
+    background-color:rgb(3, 86, 153);
 }
 
 
@@ -115,6 +119,10 @@
     margin-top: 10px;
 }
 
+.box2:hover{
+    background-color:rgba(255, 123, 0, 0.881);
+}
+
 .box3 {
     height: 200px;
     width: 45%;
@@ -135,6 +143,10 @@
     margin-top: 5px;
 }
 
+.box3:hover{
+    background-color:rgba(255, 123, 0, 0.881);
+}
+
 .box4 {
     height: 200px;
     width: 45%;
@@ -153,4 +165,8 @@
     height: 140px;
     width: 170px;
     margin-top: 2px;
+}
+
+.box4:hover{
+    background-color:rgb(3, 86, 153);
 }
