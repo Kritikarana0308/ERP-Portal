@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SYLLABUS</title>
+  <title>Attendance</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
+<body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
   <div class="flex items-center space-x-4 mx-5 my-3">
     <button class="h-10 w-25">
       <i class="fa-solid fa-bars text-3xl"></i>
@@ -17,7 +17,85 @@
     <img src="Images/dseu.logo.jpg" alt="Logo" class="h-12 w-15">
     <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
   </div>
+  <div class="h-20 w-30 mx-3">
+    <div class="flex items-center justify-between bg-blue-600 text-white p-4 rounded-lg">
+      <div class="flex items-center">
+        <div class="bg-green-300 w-12 h-12 rounded-full mr-4">
+          <img src="https://via.placeholder.com/50" alt="profile" class="rounded-full">
+        </div>
+        <div>
+          <h1 class="text-lg font-bold">KOMAL SINGH</h1>
+          <p>Roll Number: 10622125</p>
+          <p>Semester: 5</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p>Campus: Ambedkar DSEU Shakarpur Campus-I</p>
+        <p>Program: Diploma in Computer Engineering</p>
+      </div>
+    </div>
   
-
+    <!-- Subject Selection Section -->
+    <h2 class="text-center text-2xl font-bold my-8">ATTENDANCE</h2>
+    <p class="text-center my-8 text-xl"><b class="text-xl">Course Type :</b> CC - Compulsory Course,  PE - Program Elective,  OE - Open Elective</p>
+    
+    <div>
+      <table class="table-auto min-w-full text-center border border-gray-200">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-6 py-3 border-b-2 border-gray-300 text-sm font-bold">Course</th>
+            <th class="px-6 py-3 border-b-2 border-gray-300 text-sm font-bold">Course Code</th>
+            <th class="px-6 py-3 border-b-2 border-gray-300 text-sm font-bold">Course Type</th>
+            <th class="px-6 py-3 border-b-2 border-gray-300 text-sm font-bold">attendance (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">Python Programming</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PC501</td>
+            <td class="px-6 py-4 border-b border-gray-200">CC</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">78</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">Web Development</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PC502</td>
+            <td class="px-6 py-4 border-b border-gray-200">CC</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">95</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">Computer Hardware and Maintenance</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PC503</td>
+            <td class="px-6 py-4 border-b border-gray-200">CC</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">82</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">English Communication V</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS - PC024</td>
+            <td class="px-6 py-4 border-b border-gray-200">CC</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">79<td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">Internet of Things</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PE501</td>
+            <td class="px-6 py-4 border-b border-gray-200">PE</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">not applicable</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">Data Mining & Data Warehousing</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PE502</td>
+            <td class="px-6 py-4 border-b border-gray-200">PE</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">not applicable</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 border-b border-gray-200">E-Commerce & Digital Marketing</td>
+            <td class="px-6 py-4 border-b border-gray-200">CS-PE503</td>
+            <td class="px-6 py-4 border-b border-gray-200">PE</td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200">89</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    
 </body>
 </html>
