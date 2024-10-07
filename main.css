@@ -71,6 +71,7 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
+    
 }
 
 .box1 {
@@ -168,4 +169,10 @@
 
 .box4:hover{
     background-color:rgb(3, 86, 153);
+}
+@media screen and (max-width : 600px) and(min-width :200px){
+    .main{
+        visibility: hidden;
+        margin-left: 234px;
+}
 }
