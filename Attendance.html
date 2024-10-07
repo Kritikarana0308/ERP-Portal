@@ -8,14 +8,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+          function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const menuIcon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            if (menuIcon.classList.contains('fa-bars')) {
+              menuIcon.classList.remove('fa-bars');
+              menuIcon.classList.add('fa-times');
+            } else {
+              menuIcon.classList.remove('fa-times');
+              menuIcon.classList.add('fa-bars');
+            }
+          }
+        </script>
 </head>
 <body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
   <div class="flex items-center space-x-4 mx-5 my-3">
-    <button class="h-10 w-25">
-      <i class="fa-solid fa-bars text-3xl"></i>
+    <button onclick="toggleMenu()" class="h-10 w-25">
+      <i id="menuIcon" class="fa-solid fa-bars text-3xl"></i>
     </button>
     <img src="Images/dseu.logo.jpg" alt="Logo" class="h-12 w-15">
     <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
+  </div>
+
+  <!-- Vertical Hamburger Menu (on left) -->
+  <div id="menu" class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
+    <ul class="text-black text-lg font-semibold space-y-4">
+      <li><a href="#" class="hover:text-blue-600">Profile</a></li>
+      <li><a href="#" class="hover:text-blue-600">Dashboard</a></li>
+      <li><a href="#" class="hover:text-blue-600">Exam Registration</a></li>
+      <li><a href="#" class="hover:text-blue-600">Fee Details</a></li>
+      <li><a href="#" class="hover:text-blue-600">Time Table</a></li>
+      <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+    </ul>
   </div>
   <div class="h-20 w-30 mx-3">
     <div class="flex items-center justify-between bg-blue-600 text-white p-4 rounded-lg">
