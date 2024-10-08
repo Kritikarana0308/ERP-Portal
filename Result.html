@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Announcement</title>
+  <title>Fee-Submission</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -23,9 +23,8 @@
     }
   </script>
 </head>
-<body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
+<body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
 
-  <!-- Navbar -->
   <div class="flex items-center space-x-4 mx-5 my-3">
     <button onclick="toggleMenu()" class="h-10 w-25">
       <i id="menuIcon" class="fa-solid fa-bars text-3xl"></i>
@@ -34,27 +33,23 @@
     <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
   </div>
 
-  <!-- Vertical Hamburger Menu (on left) -->
   <div id="menu" class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
     <ul class="text-black text-lg font-semibold space-y-4">
-      <li><a href="Profile.html" class="hover:text-blue-600">Profile</a></li>
-      <li><a href="Home-page.html" class="hover:text-blue-600">Dashboard</a></li>
-      <li><a href="#" class="hover:text-blue-600">Exam Registration</a></li>
-      <li><a href="#" class="hover:text-blue-600">Fee Details</a></li>
-      <li><a href="#" class="hover:text-blue-600">Time Table</a></li>
-      <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+      <li><a href="Profile.html" class="hover:text-blue-600"><i class="fas fa-user"></i> Profile</a></li>
+      <li><a href="Home-page.html" class="hover:text-blue-600"><i class="fas fa-home"></i> Dashboard</a></li>
+      <li><a href="Exam Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
+      <li><a href="Fee-Submission.html" class="hover:text-blue-600"><i class="fas fa-money-check-alt"></i> Fee Details</a></li>
+      <li><a href="Time-Table.html" class="hover:text-blue-600"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
+      <li><a href="#" class="hover:text-blue-600"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
     </ul>
   </div>
-   <!-- Result Form Container -->
+
+  
    <div class="h-2/4 w-1/2 rounded-lg p-8 border-2 border-black ml-96 mt-32 bg-white">
-    <!-- Result Heading -->
     <div class="text-center">
         <h2 class="text-3xl font-bold text-white bg-blue-600 py-3 rounded-md">RESULT</h2>
     </div>
-
-    <!-- Form Fields -->
     <form class="mt-6 space-y-4">
-        <!-- Academic Year Dropdown -->
         <div>
             <label class="block text-sm font-medium text-gray-700">Academic Year</label>
             <select class="block w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -64,8 +59,6 @@
                 <option>2021-2022</option>
             </select>
         </div>
-
-        <!-- Semester Dropdown -->
         <div>
             <label class="block text-sm font-medium text-gray-700">Semester</label>
             <select class="block w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -76,8 +69,6 @@
                 <option>Semester 4</option>
             </select>
         </div>
-
-        <!-- Submit Button -->
         <div class="text-center">
             <button type="submit" class="w-20 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"><a href="submit.html">SUBMIT</a></button>
         </div>
