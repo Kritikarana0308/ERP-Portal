@@ -9,16 +9,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
-  <div class="flex items-center space-x-4 mx-5 my-3">
-    <button class="h-8 w-23">
-      <i class="fa-solid fa-bars text-2xl"></i>
-    </button>
-    <img src="Images/dseu.logo.jpg" alt="Logo" class="h-10 w-12">
-    <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
-  </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const menuIcon = document.getElementById('menuIcon');
+        menu.classList.toggle('hidden');
+        if (menuIcon.classList.contains('fa-bars')) {
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-times');
+        } else {
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+        }
+      }
+    </script>
+  </head>
+  <body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
+  
+    <!-- Navbar -->
+    <div class="flex items-center space-x-4 mx-5 my-3">
+      <button onclick="toggleMenu()" class="h-10 w-25">
+        <i id="menuIcon" class="fa-solid fa-bars text-3xl"></i>
+      </button>
+      <img src="Images/dseu.logo.jpg" alt="Logo" class="h-12 w-15">
+      <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
+    </div>
+  
+    <!-- Vertical Hamburger Menu (on left) -->
+    <div id="menu" class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
+      <ul class="text-black text-lg font-semibold space-y-4">
+        <li><a href="Profile.html" class="hover:text-blue-600">Profile</a></li>
+        <li><a href="Home-page.html" class="hover:text-blue-600">Dashboard</a></li>
+        <li><a href="#" class="hover:text-blue-600">Exam Registration</a></li>
+        <li><a href="#" class="hover:text-blue-600">Fee Details</a></li>
+        <li><a href="#" class="hover:text-blue-600">Time Table</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+      </ul>
+    </div>
 
   <div class="h-20 w-25 mx-10 my-10">
     <div class="flex items-center justify-between bg-blue-500 text-white p-3 rounded-lg">
@@ -35,8 +62,8 @@
     <h2 class="text-xl font-bold mb-4 ml-60 mt-2">Personal Details :</h2>
     <div class="grid grid-cols-2 gap-4 gap-x-44 ml-60">
         <div><strong>Name:</strong> Komal Singh</div>
-        <div><strong>Father's Name:</strong> Shanay Singh</div>
-        <div><strong>Mother's Name:</strong> Anjali Devi</div>
+        <div><strong>Father's Name:</strong> Mr.Trilokchand</div>
+        <div><strong>Mother's Name:</strong> Geeta Devi</div>
         <div><strong>Mobile Number:</strong> 9315868744</div>
         <div><strong>Aadhar Card:</strong> 251374702902</div>
         <div><strong>Gender:</strong> Female</div>
