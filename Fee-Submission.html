@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FEE Details</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="icon" id="dropdown-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-img">
+            <img src="Images/dseu.logo.jpg" alt="DSEU Logo">
+        </div>
+        <p>DSEU PORTAL</p>
+    </div>
+
+     <!-- Dropdown menu (initially hidden) -->
+     <div id="menu" class="hidden">
+        <ul class="list">
+            <li><a href="Profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="Home-page.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="Exam-Registration.html"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
+            <li><a href="Fee-Submission.html"><i class="fas fa-money-check-alt"></i> Fee Details</a></li>
+            <li><a href="Time-Table.html"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
+            <li><a href="Contact-us.html"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Toggle menu visibility on hamburger icon click
+        document.getElementById("dropdown-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+            
+            const icon = this.querySelector("i");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        });
+    </script>
+</body>
+</html>
