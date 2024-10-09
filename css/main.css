@@ -4,8 +4,6 @@
 }
 
 .login-form2 {
-    background-image: url(Images/backgroundimg.png);
-    background-size: cover;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -107,17 +105,21 @@
 }
 
 .main {
-    height: 60px;
+    height: 90px;
     width: 1560px;
     border-radius: 10px;
     background-color: rgb(9, 112, 197);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bolder;
     margin-left: 90px;
     margin-top: 70px;
+}
+
+.main h4{
+    padding-top: 20px;
+    font-size: 40px;
+    margin-left: 520px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
 }
 
 .mainboxes {
