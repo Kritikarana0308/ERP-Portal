@@ -12,10 +12,9 @@
 }
 
 .navbar {
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content:flex-start;
     margin-left: 20px;
     margin-top: 15px;
 
@@ -23,18 +22,19 @@
 
 .icon {
     font-size: 30px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
 .nav-img img {
-    height: 50px;
-    width: 65px;
+    height: 60px;
+    width: 75px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 .navbar p {
-    font-size: 1rem;
+    font-size: 22px;
     font-weight: 600;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,11 +44,11 @@
 .para {
     display: flex;
     justify-content: flex-end;
-    margin-left: 1070px;
+    margin-left: 1130px;
 }
 
 .icon2 {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 10px;
     margin-top: 5px;
     gap: 10px;
@@ -57,7 +57,7 @@
 
 .main {
     height: 60px;
-    width: 1415px;
+    width: 1560px;
     border-radius: 10px;
     background-color: rgb(9, 112, 197);
     display: flex;
@@ -65,7 +65,7 @@
     align-items: center;
     font-size: 24px;
     font-weight: bolder;
-    margin-left: 75px;
+    margin-left: 90px;
     margin-top: 70px;
 }
 
@@ -75,12 +75,10 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
-    cursor: pointer;
-    
 }
 
 .box1 {
-    height: 200px;
+    height: 250px;
     width: 45%;
     background-color: rgb(9, 112, 197);
     border-radius: 10px;
@@ -96,9 +94,9 @@
 }
 
 .box1 img {
-    height: 130px;
-    width: 140px;
-    margin-top: 10px;
+    height: 140px;
+    width: 160px;
+    margin-top: 20px;
 }
 
 .box1:hover{
@@ -109,7 +107,7 @@
 
 
 .box2 {
-    height: 200px;
+    height: 250px;
     width: 45%;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
@@ -125,9 +123,9 @@
 }
 
 .box2 img {
-    height: 130px;
-    width: 140px;
-    margin-top: 20px;
+    height: 140px;
+    width: 160px;
+    margin-top: 30px;
 }
 
 .box2:hover{
@@ -137,7 +135,7 @@
 }
 
 .box3 {
-    height: 200px;
+    height: 250px;
     width: 45%;
     background-color: rgb(255, 166, 0);
     border-radius: 10px;
@@ -154,11 +152,10 @@
 }
 
 .box3 img {
-    height: 140px;
-    width: 160px;
+    height: 170px;
+    width: 190px;
     margin-top: 5px;
 }
-
 
 .box3:hover{
     background-color:rgba(255, 123, 0, 0.881);
@@ -167,7 +164,7 @@
 }
 
 .box4 {
-    height: 200px;
+    height: 250px;
     width: 45%;
     background-color: rgb(9, 112, 197);
     border-radius: 10px;
@@ -183,9 +180,9 @@
 }
 
 .box4 img {
-    height: 140px;
-    width: 180px;
-    margin-top: 2px;
+    height: 170px;
+    width: 195px;
+    margin-top: 5px;
 }
 
 .box4:hover{
