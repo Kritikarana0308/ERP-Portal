@@ -9,6 +9,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
+    //sidebar//
     function toggleMenu() {
       const menu = document.getElementById('menu');
       const menuIcon = document.getElementById('menuIcon');
@@ -21,6 +22,26 @@
         menuIcon.classList.add('fa-bars');
       }
     }
+
+    //checkboxes//
+    function toggleCheck(element) {
+      const icon = element.querySelector('i');
+      if (icon.classList.contains('fa-regular')) {
+        icon.classList.remove('fa-regular', 'fa-square');
+        icon.classList.add('fa-solid', 'fa-square-check');
+      } else {
+        icon.classList.remove('fa-solid', 'fa-square-check');
+        icon.classList.add('fa-regular', 'fa-square');
+      }
+    }
+
+    //subject submission//
+    function handleSubmit() {
+      sessionStorage.setItem("submitMessage", "Subjects submitted successfully!");
+
+      window.location.href = "Home-page.html";
+    }
+
   </script>
 </head>
 <body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
@@ -38,7 +59,7 @@
     <ul class="text-black text-xl font-semibold space-y-4">
       <li><a href="Profile.html" class="hover:text-blue-600"><i class="fas fa-user"></i> Profile</a></li>
       <li><a href="Home-page.html" class="hover:text-blue-600"><i class="fas fa-home"></i> Dashboard</a></li>
-      <li><a href="Exam Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
+      <li><a href="Exam-Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
       <li><a href="Fee-Submission.html" class="hover:text-blue-600"><i class="fas fa-money-check-alt"></i> Fee Details</a></li>
       <li><a href="Time-Table.html" class="hover:text-blue-600"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
       <li><a href="Contact-us.html" class="hover:text-blue-600"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
@@ -104,24 +125,26 @@
             <td class="px-6 py-4 border-b border-gray-200">Internet of Things</td>
             <td class="px-6 py-4 border-b border-gray-200">CS-PE501</td>
             <td class="px-6 py-4 border-b border-gray-200">PE</td>
-            <td class="px-6 py-4 mr-10 border-b border-gray-200"><i class="fa-regular fa-square"></i></td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200" onclick="toggleCheck(this)"><i class="fa-regular fa-square"></i></td>
           </tr>
           <tr class="hover:bg-gray-50">
             <td class="px-6 py-4 border-b border-gray-200">Data Mining & Data Warehousing</td>
             <td class="px-6 py-4 border-b border-gray-200">CS-PE502</td>
             <td class="px-6 py-4 border-b border-gray-200">PE</td>
-            <td class="px-6 py-4 mr-10 border-b border-gray-200"><i class="fa-regular fa-square"></i></td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200"onclick="toggleCheck(this)"><i class="fa-regular fa-square"></i></td>
           </tr>
           <tr class="hover:bg-gray-50">
             <td class="px-6 py-4 border-b border-gray-200">E-Commerce & Digital Marketing</td>
             <td class="px-6 py-4 border-b border-gray-200">CS-PE503</td>
             <td class="px-6 py-4 border-b border-gray-200">PE</td>
-            <td class="px-6 py-4 mr-10 border-b border-gray-200"><i class="fa-regular fa-square"></i></td>
+            <td class="px-6 py-4 mr-10 border-b border-gray-200" onclick="toggleCheck(this)"><i class="fa-regular fa-square"></i></td>
           </tr>
         </tbody>
       </table>
     </div>
+    <div class="text-center">
+      <button type="submit" onclick="handleSubmit()" class="w-32 bg-blue-600 text-white py-2 mt-10 mb-20 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
   </div>
-    
+  </div>
 </body>
 </html>

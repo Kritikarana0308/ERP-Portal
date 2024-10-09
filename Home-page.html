@@ -55,6 +55,7 @@
         </div>
     </div>
 
+
     <script>
 
         const urlParams = new URLSearchParams(window.location.search);
@@ -67,6 +68,21 @@
                 messageContainer.style.display = 'none';
             }, 1000);
         }
+
+        window.onload = function() {
+            const message = sessionStorage.getItem("submitMessage");
+            const messageDiv = document.getElementById("message");
+      
+            if (message) {
+              messageDiv.innerText = message;
+              messageDiv.classList.remove("hidden");
+
+              setTimeout(() => {
+                messageDiv.classList.add("hidden");
+                sessionStorage.removeItem("submitMessage");
+              }, 1000);
+            }
+          };
     </script>
     
 </body>
