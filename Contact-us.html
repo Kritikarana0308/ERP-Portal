@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,13 +15,13 @@
     <div class="background">
         <div class="main">
             <div class="img">
-                <img width="150px" src="logo.0371174c.png">
+                <img width="150px" src="Images/dseu.logo.jpg">
             </div>
             <div class="contact">
                 <H1>CONTACT US</H1>
             </div>
             <div class="img2">
-                <img src="contact.png">
+                <img width="540px" src="Images/Contact.jpg">
             </div>
         </div>
     </div>
@@ -31,7 +31,13 @@
         <div>
           <textarea name ="my text" cols="140" rows="9" name="write down here">Write down here....</textarea>
         </div>
-        <button class="btn">SUBMIT</button>
-</div>
+        <button class="btn" id="submitBtn">SUBMIT</button>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            window.location.href = "Home-page.html?submitted=true";
+        });
+    </script>
 </body>
 </html>

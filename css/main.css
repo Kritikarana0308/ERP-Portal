@@ -284,3 +284,14 @@
         margin-top: 15px;
     }
 }
+
+.success-message {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    display: none;
+}

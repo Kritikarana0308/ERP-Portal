@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(Images/backgroundimg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.background{
+    background-color: rgb(183, 158, 241);
+    height: 46vh;
+    width: 1500px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.main{
+    display: flex;
+}
+
+.img{
+    margin-top: 10px;
+}
+
+.contact{
+   color: white;
+   font-size: 2.5rem;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 150px;
+   margin-right: 40px;
+}
+
+.img2{
+    margin-left: 250px;
+    border-radius: 50px;
+}
+
+.text{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text h2{
+    font-size: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text textarea{
+    color: rgb(128, 128, 128);
+    font-weight: 500;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 200px;
+}
+
+.btn{
+    background-color: rgb(33, 163, 33);
+    color: white;
+    height: 50px;
+    width: 170px;
+    font-weight:700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-left: 950px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(9, 108, 9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
