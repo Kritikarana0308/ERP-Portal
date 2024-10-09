@@ -9,19 +9,6 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Delhi Skill and Entrepreneurship University &#8211; Crafting excellence</title>
-    <script>
-        
-        const urlParams = new URLSearchParams(window.location.search);
-        const isSubmitted = urlParams.get('submitted');
-        
-        if (isSubmitted === 'true') {
-            const messageContainer = document.getElementById('messageContainer');
-            messageContainer.style.display = 'block';
-            setTimeout(() => {
-                messageContainer.style.display = 'none';
-            }, 1000);
-        }
-    </script>
 </head>
 
 <body>
@@ -67,5 +54,20 @@
             </a>
         </div>
     </div>
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const isSubmitted = urlParams.get('submitted');
+        
+        if (isSubmitted === 'true') {
+            const messageContainer = document.getElementById('messageContainer');
+            messageContainer.style.display = 'block';
+            setTimeout(() => {
+                messageContainer.style.display = 'none';
+            }, 1000);
+        }
+    </script>
+    
 </body>
 </html>

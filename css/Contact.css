@@ -51,18 +51,41 @@ body{
 .text h2{
     font-size: 3rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
+    display: inline-block; 
+    overflow: hidden;
+    border-right: 2px solid; 
+    white-space: nowrap;
+    animation: typing 1s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
 .text textarea{
     color: rgb(128, 128, 128);
     font-weight: 500;
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Rounded MT Bold;
     padding-left: 20px;
     padding-top: 20px;
-    height: 200px;
+    height: 150px;
 }
 
 .btn{

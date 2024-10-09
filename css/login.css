@@ -21,8 +21,6 @@ body {
     width: 80%;
     max-width: 1200px;
 }
-
-/* Logo Section */
 .logo img {
     width: 300px;
     padding: 10px;
@@ -31,7 +29,6 @@ body {
     right:-150px;
 }
 
-/* Login Box */
 .login-box {
     margin-left: 130px;
     border: 2px solid black;
@@ -83,7 +80,6 @@ body {
     text-decoration: underline;
 }
 
-/* Login Button */
 button {
     width: 100%;
     padding: 10px;
