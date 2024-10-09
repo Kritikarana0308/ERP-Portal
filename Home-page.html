@@ -49,6 +49,8 @@
             </ul>
         </div>
 
+        <div id="messageContainer" class="success-message">Your message has been submitted successfully!</div>
+
         <div class="main">
             <h4>WELCOME KOMAL SINGH</h4>
         </div>
@@ -114,22 +116,6 @@
             setTimeout(() => {
                 messageContainer.style.display = 'none';
             }, 1000);
-        }
-
-        // Handle submitMessage from session storage
-        window.onload = function () {
-            const message = sessionStorage.getItem("submitMessage");
-            const messageDiv = document.getElementById("message");
-
-            if (message) {
-                messageDiv.innerText = message;
-                messageDiv.classList.remove("hidden");
-
-                setTimeout(() => {
-                    messageDiv.classList.add("hidden");
-                    sessionStorage.removeItem("submitMessage");
-                }, 1000);
-            }
         };
     </script>
 </body>
