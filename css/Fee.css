@@ -148,12 +148,12 @@ h2{
 
 .pay{
     height: 270px;
-    width: 80%;
+    width: 90%;
     border: 2px solid black;
     border-radius: 10px;
-    margin-left: 80px;
-    padding-left: 10px;
+    margin-left: 70px;
     padding-top: 10px;
+    padding-left: 10px;
     margin-top: 10px;
     font-size: 24px;
     font-weight: bold;
@@ -176,9 +176,9 @@ hr{
     color: white;
     border: 1px solid black;
     border-radius: 8px;
-    margin-left: 1130px;
-    margin-top: 10px;
-    font-size: 22px;
+    margin-left: 1270px;
+    margin-top: 20px;
+    font-size: 26px;
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
