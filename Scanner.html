@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fee-Submission</title>
+  <title>QR scanner</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -23,7 +23,7 @@
     }
   </script>
 </head>
-<body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
+<body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
 
   <div class="flex items-center space-x-4 mx-5 my-3">
     <button onclick="toggleMenu()" class="h-10 w-25">
@@ -43,36 +43,17 @@
       <li><a href="Contact-us.html" class="hover:text-blue-600"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
     </ul>
   </div>
-
-  
-   <div class="h-2/4 w-1/2 rounded-lg p-8 border-2 border-black ml-96 mt-32 bg-white">
-    <div class="text-center">
-        <h2 class="text-3xl font-bold text-white bg-blue-600 py-3 rounded-md">RESULT</h2>
+  <div class="mt-24 ml-[600px] bg-white shadow-lg border-2 rounded-lg p-6 max-w-md w-full text-center">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">Scan the QR Code</h1>
+    <div class="flex justify-center mb-4">
+        <img src="Images/qr-scanner.png" alt="QR Code" class="w-96 h-96">
     </div>
-    <form class="mt-6 space-y-4">
-        <div>
-            <label class="block text-sm font-medium text-gray-700">Academic Year</label>
-            <select class="block w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Select Year</option>
-                <option>2023-2024</option>
-                <option>2022-2023</option>
-                <option>2021-2022</option>
-            </select>
-        </div>
-        <div>
-            <label class="block text-sm font-medium text-gray-700">Semester</label>
-            <select class="block w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Select Semester</option>
-                <option>Semester 1</option>
-                <option>Semester 2</option>
-                <option>Semester 3</option>
-                <option>Semester 4</option>
-            </select>
-        </div>
-        <div class="text-center">
-            <button type="submit" class="w-24 bg-blue-600 text-white text-xl font-bold py-2 rounded-md hover:bg-blue-700 hover:shadow-xl transform transition-transform duration-500 hover: translate-6 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500"><a href="submit.html">SUBMIT</a></button>
-        </div>
-    </form>
-</div>
+    <div class="mb-4 mr-10">
+        <input type="text" id="qrText" placeholder="Enter text for QR" class="border-2 border-gray-700 rounded w-full px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+        <button class="bg-indigo-500 text-white font-bold px-4 py-2 mr-6 rounded hover:bg-indigo-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transform transition-transform duration-300 hover: translate-6 ease-in-out">
+            Generate QR Code
+        </button>
+    </div>
 </body>
 </html>

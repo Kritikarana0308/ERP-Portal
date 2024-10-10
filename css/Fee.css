@@ -9,7 +9,7 @@ body {
     background-position: center;
     height: 100vh;
     width: 100%;
-    position: relative;
+    position: fixed;
 
 }
 
@@ -92,4 +92,107 @@ body {
 
 .list li a:hover {
     color: #1d4ed8;
+}
+
+.header{
+    height: 90px;
+    width: 70%;
+    background-color: rgb(11, 59, 155);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+
+.header h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    font-size: 50px;
+}
+
+.table{
+    height: 100px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.table h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.table p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.pay{
+    height: 270px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+hr{
+    width: 80%;
+    display: block;
+    color: black;
+    margin-left: 130px;
+    margin-bottom:15px;
+    border-style: inherit;
+    border-width: 1.5px;
+}
+ 
+.pay .btn{
+    height: 60px;
+    width: 150px;
+    background-color: rgb(42, 184, 42);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 1130px;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pay .btn:hover{
+    background-color: rgb(9, 108, 9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.footer{
+    text-align: center;
+}
+
+img{
+    margin-left: 15px;
+    margin-top: 15px;
 }
