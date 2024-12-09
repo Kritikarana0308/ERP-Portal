@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERP Portal</title>
     <link rel="stylesheet" href="css/login.css">
+    <script type="module" src="Login.js" defer></script>
 </head>
 <body>
     
@@ -13,8 +14,8 @@
             <h2>Login</h2>
             <form>
                 <div class="input-group">
-                    <label for="username">Username:</label>
-                    <input type="username" placeholder="username" id="username" required>
+                    <label for="Email">Email:</label>
+                    <input type="Email" placeholder="Email" id="Email" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Password:</label>
@@ -24,7 +25,7 @@
                     <a href="Reset-password.html">Forgot Password?</a>
                 </div>
                 <div class="input-group">
-                    <button type="submit"><a href="Home-page.html">Login</a></button>
+                    <button id="submit" type="submit">Login</button>
                 </div>
             </form>
         </div>
