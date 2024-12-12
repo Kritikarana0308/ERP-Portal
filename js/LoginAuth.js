@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
+// Import necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getAuth,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -18,25 +19,43 @@ const app = initializeApp(firebaseConfig);
 // Initialize Auth
 const auth = getAuth(app);
 
-// Submit button for login
+// Login functionality
 const submit = document.getElementById("submit");
 submit.addEventListener("click", function (event) {
   event.preventDefault();
 
-  // Inputs
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  // Log in existing user
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed in
       const user = userCredential.user;
       alert("Logging In...");
       window.location.href = "Home-page.html";
     })
     .catch((error) => {
-      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+    });
+});
+
+// Password reset functionality
+const resetPassword = document.getElementById("reset");
+resetPassword.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+
+  if (!email) {
+    alert("Please enter your email address to reset the password.");
+    return;
+  }
+
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      alert("Password reset email sent. Check your inbox.");
+    })
+    .catch((error) => {
       const errorMessage = error.message;
       alert(errorMessage);
     });
