@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time-Table</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menu');
@@ -23,6 +24,7 @@
     }
   </script>
 </head>
+
 <body class="w-full h-screen bg-cover relative" style="background-image: url(Images/backgroundimg.png)">
 
   <div class="flex items-center space-x-4 mx-5 my-3">
@@ -33,27 +35,33 @@
     <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
   </div>
 
-  <div id="menu" class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
+  <div id="menu"
+    class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
     <ul class="text-black text-xl font-semibold space-y-4">
       <li><a href="Profile.html" class="hover:text-blue-600"><i class="fas fa-user"></i> Profile</a></li>
       <li><a href="Home-page.html" class="hover:text-blue-600"><i class="fas fa-home"></i> Dashboard</a></li>
-      <li><a href="Exam-Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
-      <li><a href="Fee-Submission.html" class="hover:text-blue-600"><i class="fas fa-money-check-alt"></i> Fee Details</a></li>
+      <li><a href="Exam-Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam
+          Registration</a></li>
+      <li><a href="Fee-Submission.html" class="hover:text-blue-600"><i class="fas fa-money-check-alt"></i> Fee
+          Details</a></li>
       <li><a href="Time-Table.html" class="hover:text-blue-600"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
       <li><a href="Contact-us.html" class="hover:text-blue-600"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
     </ul>
   </div>
-  <div class="bg-blue-600 rounded-t-lg p-2 flex items-center rounded-lg border-4 border-black max-w-4xl h-28 mx-auto mt-10 p-3 text-center">
+  <div
+    class="bg-blue-600 rounded-t-lg p-2 flex items-center rounded-lg border-4 border-black max-w-4xl h-28 mx-auto mt-10 p-3 text-center">
     <h2 class="text-white text-7xl font-bold ml-64">Time Table</h2>
   </div>
 
   <div class="mt-10 flex flex-col items-center">
     <img class="w-3/5" src="Images/Time-Table.png" alt="Time-Table">
     <a href="Images/Time-Table.png" download class="mt-5">
-      <button class="bg-blue-600 text-white text-xl font-bold py-2 px-4 h-14 mb-10 rounded hover:bg-blue-700 hover:shadow-xl transform transition-transform duration-500 hover: translate-6 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button
+        class="bg-blue-600 text-white text-xl font-bold py-2 px-4 h-14 mb-10 rounded hover:bg-blue-700 hover:shadow-xl transform transition-transform duration-500 hover: translate-6 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500">
         Download
       </button>
     </a>
   </div>
 </body>
+
 </html>

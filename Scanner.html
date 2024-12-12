@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR scanner</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      const menuIcon = document.getElementById('menuIcon');
-      menu.classList.toggle('hidden');
-      if (menuIcon.classList.contains('fa-bars')) {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-times');
-      } else {
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR scanner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const menuIcon = document.getElementById("menuIcon");
+        menu.classList.toggle("hidden");
+        if (menuIcon.classList.contains("fa-bars")) {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
+        } else {
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
+        }
       }
-    }
-  </script>
-</head>
-<body class="w-full h-screen bg-cover fixed" style="background-image: url(Images/backgroundimg.png)">
+    </script>
+  </head>
+  <body
+    class="w-full h-screen bg-cover fixed"
+    style="background-image: url(Images/backgroundimg.png)"
+  >
+    <div class="flex items-center space-x-4 mx-5 my-3">
+      <button onclick="toggleMenu()" class="h-10 w-25">
+        <i id="menuIcon" class="fa-solid fa-bars text-3xl"></i>
+      </button>
+      <img src="Images/dseu.logo.jpg" alt="Logo" class="h-12 w-15" />
+      <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
+    </div>
 
-  <div class="flex items-center space-x-4 mx-5 my-3">
-    <button onclick="toggleMenu()" class="h-10 w-25">
-      <i id="menuIcon" class="fa-solid fa-bars text-3xl"></i>
-    </button>
-    <img src="Images/dseu.logo.jpg" alt="Logo" class="h-12 w-15">
-    <span class="text-black text-2xl font-bold">DSEU PORTAL</span>
-  </div>
-
-  <div id="menu" class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded">
-    <ul class="text-black text-xl font-semibold space-y-4">
-      <li><a href="Profile.html" class="hover:text-blue-600"><i class="fas fa-user"></i> Profile</a></li>
-      <li><a href="Home-page.html" class="hover:text-blue-600"><i class="fas fa-home"></i> Dashboard</a></li>
-      <li><a href="Exam-Registration.html" class="hover:text-blue-600"><i class="fas fa-clipboard-list"></i> Exam Registration</a></li>
-      <li><a href="Fee-Submission.html" class="hover:text-blue-600"><i class="fas fa-money-check-alt"></i> Fee Details</a></li>
-      <li><a href="Time-Table.html" class="hover:text-blue-600"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
-      <li><a href="Contact-us.html" class="hover:text-blue-600"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="mt-24 ml-[600px] bg-white shadow-lg border-2 rounded-lg p-6 max-w-md w-full text-center">
-    <h1 class="text-2xl font-bold text-gray-800 mb-4">Scan the QR Code</h1>
-    <div class="flex justify-center mb-4">
-        <img src="Images/qr-scanner.png" alt="QR Code" class="w-96 h-96">
+    <div
+      id="menu"
+      class="hidden bg-gray-100 border border-gray-300 absolute top-18 left-5 h-96 w-60 p-5 shadow-lg rounded"
+    >
+      <ul class="text-black text-xl font-semibold space-y-4">
+        <li>
+          <a href="Profile.html" class="hover:text-blue-600"
+            ><i class="fas fa-user"></i> Profile</a
+          >
+        </li>
+        <li>
+          <a href="Home-page.html" class="hover:text-blue-600"
+            ><i class="fas fa-home"></i> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="Exam-Registration.html" class="hover:text-blue-600"
+            ><i class="fas fa-clipboard-list"></i> Exam Registration</a
+          >
+        </li>
+        <li>
+          <a href="Fee-Submission.html" class="hover:text-blue-600"
+            ><i class="fas fa-money-check-alt"></i> Fee Details</a
+          >
+        </li>
+        <li>
+          <a href="Time-Table.html" class="hover:text-blue-600"
+            ><i class="fas fa-calendar-alt"></i> Time Table</a
+          >
+        </li>
+        <li>
+          <a href="Contact-us.html" class="hover:text-blue-600"
+            ><i class="fas fa-phone-alt"></i> Contact Us</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="mb-4 mr-10">
-        <input type="text" id="qrText" placeholder="Enter text for QR" class="border-2 border-gray-700 rounded w-full px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    <div
+      class="mt-24 ml-[600px] bg-white shadow-lg border-2 rounded-lg p-6 max-w-md w-full text-center"
+    >
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">Scan the QR Code</h1>
+      <div class="flex justify-center mb-4">
+        <img src="Images/qr-scanner.png" alt="QR Code" class="w-96 h-96" />
+      </div>
+      <div class="mb-4 mr-10">
+        <input
+          type="text"
+          id="qrText"
+          placeholder="Enter text for QR"
+          class="border-2 border-gray-700 rounded w-full px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <button
+        class="bg-indigo-500 text-white font-bold px-4 py-2 mr-6 rounded hover:bg-indigo-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transform transition-transform duration-300 hover: translate-6 ease-in-out"
+      >
+        Generate QR Code
+      </button>
     </div>
-        <button class="bg-indigo-500 text-white font-bold px-4 py-2 mr-6 rounded hover:bg-indigo-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transform transition-transform duration-300 hover: translate-6 ease-in-out">
-            Generate QR Code
-        </button>
-    </div>
-</body>
+  </body>
 </html>
